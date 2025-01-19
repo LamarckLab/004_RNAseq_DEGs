@@ -1,7 +1,7 @@
 # 配置相关包（DESeq2最新版R中需要通过BioManager安装）
-install.packages(c("DESeq2", "dplyr", "ggpubr", "ggplot2", "ggrepel"))
-install.packages("BiocManager")
-BiocManager::install("DESeq2")
+# install.packages(c("DESeq2", "dplyr", "ggpubr", "ggplot2", "ggrepel"))
+# install.packages("BiocManager")
+# BiocManager::install("DESeq2")
 
 library(DESeq2)
 library(dplyr)
