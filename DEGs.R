@@ -1,13 +1,5 @@
-# 配置相关包（DESeq2最新版R中需要通过BioManager安装）
-# install.packages(c("DESeq2", "dplyr", "ggpubr", "ggplot2", "ggrepel"))
-# install.packages("BiocManager")
-# BiocManager::install("DESeq2")
-
 library(DESeq2)
 library(dplyr)
-library(ggpubr)
-library(ggplot2)
-library(ggrepel)
 
 # 读取表达矩阵
 mycounts <- read.csv("C:/Users/Lamarck/Desktop/mycounts.csv",row.names = 1)
@@ -31,9 +23,7 @@ dds <- DESeq(dds)
 res <- results(dds)
 
 head(res)
-class(res)
 res_1 <- data.frame(res)
-class(res_1)
 head(res_1)
 
 res_1 %>%
